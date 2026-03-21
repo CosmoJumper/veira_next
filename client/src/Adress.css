@@ -1,0 +1,115 @@
+.adresses-container {
+    width: 95%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .adresses-container h2 {
+    width: 100%;
+    text-align: left;
+    color: #263242;
+  }
+  
+  .adress-prev-btn,
+  .adress-next-btn {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Montserrat;
+    z-index: 10;
+    background: none;
+  }
+  
+  /* Скрываем кнопки на мобильных устройствах (ширина < 768px) */
+  @media (max-width: 800px) {
+    .adress-prev-btn,
+    .adress-next-btn {
+      display: none;
+    }
+  }
+  
+  .adresses {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    touch-action: pan-y; /* Предотвращаем прокрутку страницы при свайпе */
+  }
+  
+  .adress {
+    width: 500px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4886B9;
+    border-radius: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .adress p,
+  .adress h1 {
+    color: #263242;
+    transition: opacity 0.3s ease; /* Плавный переход для текста */
+    text-align: center;
+  }
+  
+  .adress img {
+    width: 60px;
+  }
+  
+  .adress-title {
+    color: #3886C6;
+    font-weight: 900;
+  }
+  
+  .adress-text,
+  .adress-label {
+    opacity: 1;
+  }
+  
+  .adress button {
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background: #3886C6;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .adress button:hover {
+    filter: brightness(0.9);
+  }
+  
+  .adress button:active {
+    filter: brightness(0.8);
+  }
+  
+  .progress-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .progress-bar div {
+    width: 5px;
+    height: 5px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+  }
+  
+  .progress-bar div.active {
+    background: #3886C6;
+  }

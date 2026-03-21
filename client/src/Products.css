@@ -1,0 +1,219 @@
+.products-container {
+    width: 95%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative; /* Для позиционирования кнопок */
+}
+
+.products-container h2 {
+    width: 100%;
+    text-align: left;
+    color: #263242;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 10px;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.products::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+.product {
+    background: #F7F7F7;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    min-width: 200px;
+    max-width: 200px;
+    word-wrap: break-word;
+    scroll-snap-align: start; /* Прилипает к началу */
+    flex-shrink: 0; /* Предотвращает сжатие элемента */
+}
+
+.product p {
+    margin: 0;
+}
+
+.discount {
+    padding: 10px;
+    background: #E75557;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.discount:hover {
+    filter: brightness(0.9);
+}
+
+.discount:active {
+    filter: brightness(0.8);
+}
+
+.discount p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.image {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.image img {
+    width: 140px;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+.price {
+    color: #E75557;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    cursor: pointer;
+}
+
+.product-name {
+    font-weight: bold;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.product button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: #4886B9;
+    color: #fff;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    filter: brightness(0.9);
+}
+
+.product button:active {
+    filter: brightness(0.8);
+}
+
+.products-buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+/* Стили для кнопок навигации */
+.products-prev-btn,
+.products-next-btn {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Montserrat;
+    z-index: 10; /* Чтобы кнопки были поверх баннеров */
+    background: none;
+}
+
+/* Стили для элементов управления количеством */
+.product-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    gap: 10px;
+}
+
+.product-quantity-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100px;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-quantity-controls button {
+    width: 30px !important;
+    max-width: 30px !important;
+    height: 100% !important;
+    border: none !important;
+    background: #4886B9 !important;
+    color: #fff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+}
+
+.product-quantity-controls p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.product-remove {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: #E75557;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.product-remove:hover {
+    filter: brightness(0.9);
+}
+
+.product-remove:active {
+    filter: brightness(0.8);
+}
+
+@media (max-width: 1100px) {
+    .products-buttons-container {
+        display: none;
+    }
+}

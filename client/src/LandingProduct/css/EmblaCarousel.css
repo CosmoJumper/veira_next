@@ -1,0 +1,40 @@
+.embla {
+  position: relative;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+/* Если нужно 3 слайда на экране: .embla__slide { flex-basis: 33.333%; } */
+
+.embla__controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+.embla__prev,
+.embla__next {
+  padding: 6px 10px;
+}
+.embla__dots {
+  display: flex;
+  gap: 6px;
+  margin-left: 8px;
+}
+.embla__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  border: 0;
+  background: #888;
+}
+.embla__dot.is-selected {
+  background: #fff;
+}

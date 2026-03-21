@@ -1,0 +1,269 @@
+.product-window {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 95;
+  padding-top: 30px;
+  overflow-y: auto;
+  padding-bottom: 120px;
+}
+
+.product-container-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+  gap: 10px;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.product-image img {
+  height: 100%;
+}
+
+.product-desktop-info {
+  border: 1px solid #eeeeee;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.product-desktop-info h2 {
+  color: #263242;
+}
+
+.article-number {
+  color: #4886b9;
+}
+
+.trade-price {
+  font-weight: bold;
+  color: #263242;
+}
+
+.points {
+  color: #263242;
+}
+
+.product-desktop-info button {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background: #4886b9;
+  color: #fff;
+  cursor: pointer;
+}
+
+.product-desktop-info button:hover {
+  filter: brightness(0.9);
+}
+
+.product-desktop-info button:active {
+  filter: brightness(0.8);
+}
+
+.product-desktop-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-desktop-navigation h3 {
+  color: #263242;
+}
+
+.product-desktop-navigation p {
+  margin: 0;
+  cursor: pointer;
+}
+
+.product-info {
+  width: 95%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #263242;
+}
+
+.product-description p,
+.product-use p {
+  max-width: 70%;
+}
+
+.product-certificate a {
+  color: #4886b9;
+}
+
+.product-description-text {
+  white-space: pre-wrap;
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+}
+
+.product-info-mobile {
+  width: 90%;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.mobile-element-wrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+}
+
+.add-to-cart-button-mobile {
+  min-height: 45px;
+  border-radius: 5px;
+  border: none;
+  background: #4886b9;
+  color: #fff;
+  cursor: pointer;
+  width: 200px;
+  display: none;
+}
+
+.add-to-cart-button-mobile:hover {
+  filter: brightness(0.9);
+}
+
+.add-to-cart-button-mobile:active {
+  filter: brightness(0.8);
+}
+
+.product-controls-mobile {
+  display: none;
+}
+
+.contactform-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgb(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.contactform {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.contactform h1 {
+  color: #3886c6;
+}
+
+.contactform h2 {
+  width: 90%;
+  color: #353535;
+}
+
+.contactform p {
+  width: 90%;
+  text-align: left;
+}
+
+.contactform-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.contactform-option-1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: #3886c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contactform-option-1 p {
+  width: 100%;
+  text-align: center;
+}
+
+.contactform-option-1:hover {
+  filter: brightness(0.9);
+}
+
+.contactform-option-1:active {
+  filter: brightness(0.8);
+}
+
+@media (max-width: 800px) {
+  .product-desktop-info {
+    display: none;
+  }
+
+  .product-info-mobile {
+    display: flex;
+  }
+
+  .add-to-cart-button-mobile {
+    display: block;
+  }
+
+  .product-controls-mobile {
+    display: flex;
+  }
+
+  .contactform {
+    width: 90%;
+  }
+}
