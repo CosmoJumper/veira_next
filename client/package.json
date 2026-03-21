@@ -1,66 +1,66 @@
 {
-    "name": "client",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "@testing-library/dom": "^10.4.0",
-        "@testing-library/jest-dom": "^6.6.3",
-        "@testing-library/react": "^16.2.0",
-        "@testing-library/user-event": "^13.5.0",
-        "axios": "^1.8.4",
-        "bootstrap": "^5.3.3",
-        "canvas-confetti": "^1.9.3",
-        "embla-carousel-autoplay": "^8.6.0",
-        "embla-carousel-react": "^8.6.0",
-        "gsap": "^3.13.0",
-        "i18next": "^23.16.8",
-        "mysql2": "^3.14.1",
-        "p5": "^2.0.2",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0",
-        "react-i18next": "^13.5.0",
-        "react-imask": "^7.6.1",
-        "react-router-dom": "^7.6.0",
-        "react-scripts": "5.0.1",
-        "sharp": "^0.34.1",
-        "sitemap": "^8.0.0",
-        "swiper": "^11.2.7",
-        "twilio": "^5.5.2",
-        "web-vitals": "^2.1.4",
-        "xlsx": "^0.18.5"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "autoprefixer": "^10.4.21",
-        "postcss": "^8.5.3",
-        "tailwindcss": "^4.0.15",
-        "typescript": "4.9.5"
-    },
-    "proxy": "http://localhost:5000",
-    "overrides": {
-        "typescript": "4.9.5"
-    }
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.8.4",
+    "bootstrap": "^5.3.3",
+    "canvas-confetti": "^1.9.3",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "gsap": "^3.13.0",
+    "i18next": "^23.16.8",
+    "mysql2": "^3.14.1",
+    "p5": "^2.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^13.5.0",
+    "react-imask": "^7.6.1",
+    "react-router-dom": "^7.6.0",
+    "react-scripts": "5.0.1",
+    "sharp": "^0.34.1",
+    "sitemap": "^8.0.0",
+    "swiper": "^11.2.7",
+    "twilio": "^5.5.2",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.15",
+    "typescript": "4.9.5"
+  },
+  "proxy": "http://localhost:5000",
+  "overrides": {
+    "typescript": "4.9.5"
+  }
 }
