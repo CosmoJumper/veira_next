@@ -1,0 +1,138 @@
+.cards-container {
+  width: 95%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative; /* Для позиционирования кнопок */
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+}
+
+.promo-products::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.card {
+  background: #f7f7f7;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 10px;
+  max-width: 350px;
+  height: 400px;
+  word-wrap: break-word;
+  scroll-snap-align: start; /* Прилипает к началу */
+  flex-shrink: 0; /* Предотвращает сжатие элемента */
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: filter 0.1s;
+}
+
+.card:hover {
+  filter: brightness(0.9);
+}
+
+.card:active {
+  filter: brightness(0.8);
+}
+
+.card-1 {
+  background: linear-gradient(90deg, #ace878, #a1d67f);
+}
+
+.card-2 {
+  background: #f3cf41;
+}
+
+.card-3 {
+  background: linear-gradient(90deg, #78d4e8, #7fd0d6);
+}
+
+.card-4 {
+  background: linear-gradient(90deg, #d078e8, #c67fd6);
+}
+
+.card-5 {
+  background: linear-gradient(90deg, #e8a778, #d6c07f);
+}
+
+.card-6 {
+  background: linear-gradient(90deg, #78e8a7, #7fd6a1);
+}
+
+.card-7 {
+  background: linear-gradient(90deg, #e87878, #d67f7f);
+}
+
+.card-8 {
+  background: linear-gradient(90deg, #7878e8, #7f7fd6);
+}
+
+.card h1 {
+  font-weight: 900;
+  width: 90%;
+}
+
+.card p {
+  margin: 0;
+  width: 90%;
+}
+
+.card img {
+  width: 150px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  rotate: 15deg;
+}
+
+.cards-buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+/* Стили для кнопок */
+.cards-prev-btn,
+.cards-next-btn {
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: Montserrat;
+  z-index: 10; /* Чтобы кнопки были поверх баннеров */
+  background: none;
+}
+
+@media (max-width: 1100px) {
+  .cards-buttons-container {
+    display: none;
+  }
+}

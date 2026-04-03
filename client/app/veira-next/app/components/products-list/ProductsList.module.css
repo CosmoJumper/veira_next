@@ -1,0 +1,118 @@
+.productsCategoriesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.iProduct {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 15px;
+  min-height: 200px;
+  gap: 30px;
+  border: 1px solid #eeeeee;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.iProductImage {
+  height: 100%;
+  width: 150px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.iProductImage img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.iProductInfo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.iProductInfo h3 {
+  color: #263242;
+  cursor: pointer;
+  margin: 0;
+}
+
+.iProductInfo p {
+  cursor: pointer;
+}
+
+.iProductElements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.iProductInfo button {
+  background: #4886b9;
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 45px;
+}
+
+.iProductInfo button:hover {
+  filter: brightness(0.9);
+}
+
+.iProductInfo button:active {
+  filter: brightness(0.8);
+}
+
+.iProductPriceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.iProductPriceContainer p {
+  margin: 0;
+}
+
+.iProductPrice {
+  font-weight: bold;
+}
+
+.iProductOldPrice {
+  text-decoration: line-through;
+  color: rgb(255, 122, 122);
+}
+
+.iProductQAndP {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 10px;
+}

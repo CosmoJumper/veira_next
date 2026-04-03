@@ -1,0 +1,97 @@
+.call {
+    width: 95%;
+    max-width: 1000px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#3888CA, #6EA1CB);
+    margin-top: 10px;
+}
+
+.call-first-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+}
+
+.call-first-container h2 {
+    font-weight: 900;
+    text-align: left;
+}
+
+.call-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.call-call-button {
+    background: #fff;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    color: #3888CA;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    height: 45px;
+    font-weight: bold;
+}
+
+.call-whatsapp-button {
+    background: linear-gradient(#23c052, #1b9e3c);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 45px;
+    min-width: 200px;
+}
+
+.call-call-button:hover, .call-whatsapp-button:hover {
+    filter: brightness(0.9);
+}
+
+.call-call-button:active, .call-whatsapp-button:active {
+    filter: brightness(0.8);
+}
+
+.call-second-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-second-container img {
+    width: 200px;
+}
+
+@media (max-width: 800px) {
+    .call {
+        flex-direction: column;
+    }
+
+    .call-first-container h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .call-buttons {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    
+  }

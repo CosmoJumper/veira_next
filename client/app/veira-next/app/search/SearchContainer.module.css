@@ -1,0 +1,393 @@
+.search-window {
+  width: 100vw;
+  height: 100vh;
+  z-index: 90;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  overflow-y: auto;
+}
+
+.search-back-arrow {
+  cursor: pointer;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 95%;
+  max-width: 1000px;
+  gap: 10px;
+  background: #fff;
+  top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: fixed;
+  z-index: 97;
+}
+
+.search-window-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 45px;
+  position: relative;
+  background: #fff;
+}
+
+.search__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+
+.search-window-input svg {
+  position: absolute;
+  left: 10px;
+}
+
+.search-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-options button {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background: #4886b9;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-options button:hover {
+  filter: brightness(0.9);
+}
+
+.search-options button:active {
+  filter: brightness(0.8);
+}
+
+.search-options button img {
+  width: 100%;
+}
+
+.search-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 95%;
+  max-width: 1000px;
+  min-height: 30px;
+  border: 1px solid #eeeeee;
+  margin-top: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.search-select-element {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-right: 1px solid #eeeeee;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.search-select-element p {
+  margin: 0;
+}
+
+.search-element-active {
+  background: rgb(227, 227, 227);
+}
+
+.filter-container {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  z-index: 91;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding-bottom: 120px;
+}
+
+.filter-container h2 {
+  color: #263242;
+}
+
+.filter-container h1 {
+  color: #4886b9;
+}
+
+.filter-top {
+  width: 95%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-button-close {
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  color: #4886b9;
+  border: 1px solid #4886b9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.filter-button-close:hover {
+  background: #4886b9;
+  color: #fff;
+}
+
+.slider-container {
+  width: 95%;
+  max-width: 1000px;
+  color: #263242;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.inputs div {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.inputs__number {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.slider-track {
+  position: absolute;
+  height: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  border-radius: 5px;
+  background: #ddd;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.slider__range {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  -webkit-appearance: none;
+  background: none;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.slider__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: all;
+  width: 16px;
+  height: 16px;
+  background: #4886b9;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.slider__range::-moz-range-thumb {
+  pointer-events: all;
+  width: 16px;
+  height: 16px;
+  background: #4886b9;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.current-range {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.filter-bottom {
+  background: #fff;
+  position: fixed;
+  z-index: 92;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  -webkit-box-shadow: 0px -3px 26px 0px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px -3px 26px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px -3px 26px 0px rgba(0, 0, 0, 0.22);
+}
+
+.filter-bottom button {
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  height: 45px;
+  cursor: pointer;
+}
+
+.filter-bottom button:hover {
+  filter: brightness(0.9);
+}
+
+.filter-bottom button:active {
+  filter: brightness(0.8);
+}
+
+.filter-button-clear {
+  background: #eeeeee;
+  color: black;
+}
+
+.filter-button-apply {
+  background: #4886b9;
+  color: #fff;
+}
+
+.filter-criterions-container {
+  width: 95%;
+  max-width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.filter-criterions {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  transition: height 0.3s;
+  min-height: 100px;
+  position: relative;
+}
+
+.filter-criterions::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Высота градиента */
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.9),
+    /* Почти непрозрачный белый снизу */ rgba(255, 255, 255, 0)
+      /* Полностью прозрачный сверху */
+  );
+  pointer-events: none; /* Чтобы градиент не мешал взаимодействию с элементами под ним */
+  z-index: 93; /* Помещаем поверх контента, но под кнопками .filter-bottom */
+}
+
+.filter-criterion {
+  padding: 5px;
+  background: #fff;
+  color: #4886b9;
+  border: 1px solid #4886b9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s; /* Изменяем transition для плавного переключения всех свойств */
+}
+
+.filter-criterion:hover {
+  filter: brightness(0.9);
+}
+
+.filter-criterion.selected {
+  background: #4886b9;
+  color: #fff;
+  border: 1px solid #4886b9;
+}
+
+.filter-criterion.selected:hover {
+  filter: brightness(0.9);
+}
+
+.filter-criterions-more {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #4886b9;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+
+.filter-criterions-more:hover {
+  background: #f3f3f3;
+}
+
+.filter-criterions-more:active {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2) inset;
+  -moz-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2) inset;
+  box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2) inset;
+}

@@ -1,0 +1,28 @@
+.payment-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-container img {
+    width: 120px;
+}
+
+.payment-container h1 {
+    color: #4498dc;
+}
+
+.payment-container a {
+    color: #4498dc;
+}
+
+.payment-container a:hover {
+    filter: brightness(0.9);
+}
+
+.payment-container a:active {
+    filter: brightness(0.8);
+}

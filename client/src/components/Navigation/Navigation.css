@@ -1,0 +1,46 @@
+.navigation {
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 30px;
+  background: #fff;
+  border-radius: 60px;
+  -webkit-box-shadow: 4px 4px 35px 20px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 4px 4px 35px 20px rgba(0, 0, 0, 0.04);
+  box-shadow: 4px 4px 35px 20px rgba(0, 0, 0, 0.04);
+  z-index: 100;
+}
+
+.nav-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fcfcfc;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.nav-element:hover {
+  background: #e0e0e0;
+}
+
+.nav-element img {
+  width: 15px;
+}
+
+.cart-full {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #4886b9;
+}

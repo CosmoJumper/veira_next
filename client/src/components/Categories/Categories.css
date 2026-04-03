@@ -1,0 +1,84 @@
+.products-categories-container {
+    width: 95%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 30px;
+    padding-bottom: 120px;
+}
+
+.products-category {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 200px; /* Установите нужное значение */
+    cursor: pointer;
+    background: #fff; /* Уберите красный фон для реалистичности */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Базовая тень */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Плавный переход */
+    transform-style: preserve-3d; /* Для 3D-эффекта */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.products-category img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.products-category-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    gap: 15px;
+}
+
+.products-category h2 {
+    color: #4886B9;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+ .products-category p {
+    color: #263242;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+ }
+
+.products-category button {
+    height: 45px;
+    width: 200px;
+    border-radius: 5px;
+    border: 0;
+    background: #fff;
+    color: #4886B9;
+    border: 1px solid #4886B9;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.products-category button:hover {
+    background: #4886B9;
+    color: #fff;
+}
+
+.products-category button:active {
+    filter: brightness(0.8);
+}
+
+
+
+
+@media (max-width: 800px) {
+    .products-categories-container {
+        grid-template-columns: 1fr;
+    }
+  }
